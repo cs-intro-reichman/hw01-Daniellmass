@@ -4,6 +4,10 @@
  */
 public class Coins {
 	public static void main(String[] args) {
-		// Put your code here
+		// The qauntity of the cents must be natural number.
+		int qaunOfCents = Integer.parseInt(args[0]);
+		int quarters = qaunOfCents / 25;
+		int remainder = qaunOfCents - (quarters * 25);
+		System.out.println("Use " + quarters + " quarters and " + remainder + " cents");
 	}
 }
